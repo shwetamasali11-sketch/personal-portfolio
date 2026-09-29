@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 19px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        nav a {
+            color: #2563eb;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #7c3aed;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 55px 20px;
+        }
+
+        section h2 {
+            color: #2563eb;
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #7c3aed;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .contact {
+            background: white;
+            text-align: center;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <p>3rd Semester B.Tech CSE Student</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a 3rd semester B.Tech Computer Science and Engineering
+                student building my foundation in programming, development
+                tools, version control, and collaborative software development.
+            </p>
+
+            <br>
+
+            <p>
+                Through my recent activities, I have been learning how to set
+                up and use development environments, write and run basic
+                programs, work with Git and GitHub, collaborate using developer
+                tools, and maintain coding practice repositories.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects & Learning</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <h3>Hello World Project</h3>
+                <p>
+                    A beginner-level project created as part of my development
+                    environment and programming setup activities. It helped me
+                    practise writing, running, and managing a basic program.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Git & GitHub Work</h3>
+                <p>
+                    Practised using Git for version control and GitHub for
+                    managing and sharing repositories, including commits and
+                    pushing project work.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>GitLens & Live Share</h3>
+                <p>
+                    Explored GitLens and Live Share in VS Code to understand
+                    Git-related information and the basics of collaborative
+                    coding.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>LeetCode Practice Repository</h3>
+                <p>
+                    Created and worked with a repository for LeetCode practice
+                    to organise and maintain coding practice.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <span class="skill">Programming Fundamentals</span>
+            <span class="skill">C / C++</span>
+            <span class="skill">Java</span>
+            <span class="skill">Git</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">GitLens</span>
+            <span class="skill">VS Code</span>
+            <span class="skill">Live Share</span>
+            <span class="skill">LeetCode</span>
+            <span class="skill">Version Control</span>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <div class="contact">
+            <p>
+                I am currently building my skills and documenting my learning
+                journey through projects, coding practice, and development
+                activities.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="#">Add your GitHub profile link</a>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                Add your email address
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 | Personal Portfolio | 3rd Semester B.Tech CSE</p>
+    </footer>
+
+</body>
+</html>
